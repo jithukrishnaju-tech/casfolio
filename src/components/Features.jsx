@@ -9,19 +9,18 @@ const Features = () => {
       img: Signal,
       title: "Real-Time Market Data",
       description:
-        "Get real-time Indian stock market data and insights into the evolving cryptocurrency market to make high-confidence trades.",
+        "Get real-time market data and insights into the evolving cryptocurrency market.",
     },
     {
       img: Teaching,
       title: "Educational Resources",
-      description:
-        "Access tutorials, webinars, and expert insights to master the markets and trade safely with confidence.",
+      description: "Access tutorials, webinars, and insights.",
     },
     {
       img: Analytics,
       title: "24/7 Customer Support",
       description:
-        "Enjoy dedicated support for every step of your trading journey with our 24/7 customer support team.",
+        "Enjoy dedicated support for every step of your journey with our 24/7 customer support team.",
     },
   ];
 

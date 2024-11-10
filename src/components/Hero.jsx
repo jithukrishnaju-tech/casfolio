@@ -58,8 +58,7 @@ const Hero = () => {
           GROWING WITH REAL TIME MARKET DATA
         </p>
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 mt-6">
-          Grow with {text}
-          <span className="animate-blink">|</span>
+          Where Knowledge Meets Opportunity
         </h1>
         <p className="md:text-2xl text-xl font-bold text-gray-500 mt-4">
           Real Time market insights, dedicated support, comprehensive
