@@ -41,15 +41,30 @@ const Features = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:-translate-y-2"
+            className="bg-[#1a1a1a] rounded-lg 
+                     shadow-[0_4px_12px_rgba(255,255,255,0.05)]
+                     hover:shadow-[0_20px_50px_rgba(255,255,255,0.1)] 
+                     active:shadow-[0_10px_30px_rgba(255,255,255,0.15)]
+                     transform transition-all duration-300 
+                     hover:-translate-y-2 
+                     active:translate-y-0 
+                     cursor-pointer"
           >
-            <img
-              className="w-full h-[300px] object-cover rounded-t-lg transform hover:scale-105 transition-transform duration-300"
-              src={feature.img}
-              alt={feature.title}
-            />
+            <div className="overflow-hidden rounded-t-lg">
+              <img
+                className="w-full h-[300px] object-cover transform 
+                         hover:scale-105 transition-transform duration-300"
+                src={feature.img}
+                alt={feature.title}
+              />
+            </div>
             <div className="p-6 flex flex-col items-center text-center">
-              <h3 className="text-2xl font-semibold py-2">{feature.title}</h3>
+              <h3
+                className="text-2xl font-semibold py-2 
+                           hover:text-[#00df9a] transition-colors duration-300"
+              >
+                {feature.title}
+              </h3>
               <p className="text-gray-400 leading-relaxed">
                 {feature.description}
               </p>
