@@ -1,5 +1,5 @@
 import React from "react";
-import Signal from "../images/signal.jpg";
+import Signal from "../images/signal.jpeg";
 import Teaching from "../images/teaching.jpg";
 import Analytics from "../images/analytics.jpg";
 
@@ -14,13 +14,14 @@ const Features = () => {
     {
       img: Teaching,
       title: "Educational Resources",
-      description: "Access tutorials, webinars, and insights.",
+      description:
+        "Access tutorials, webinars, and insights to master the markets and trade safely with confidence.",
     },
     {
       img: Analytics,
       title: "24/7 Customer Support",
       description:
-        "Enjoy dedicated support for every step of your journey with our 24/7 customer support team.",
+        "Enjoy dedicated support for every step of your trading journey with our 24/7 customer support team.",
     },
   ];
 
@@ -32,7 +33,7 @@ const Features = () => {
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
           Discover the tools and resources that will help you succeed in your
-          trading journey
+          journey
         </p>
       </div>
 

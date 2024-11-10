@@ -86,7 +86,7 @@ const Navbar = () => {
         fontWeight="700"
         fill="#2dd4bf"
       >
-        Cashfolio
+        cashfolio
       </text>
       <text
         x="10"

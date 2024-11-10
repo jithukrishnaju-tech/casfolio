@@ -5,7 +5,7 @@ const Hero = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const words = ["Indian Stock", "Crypto", "BTC"];
+  const words = ["Opportunity", "Growth"];
   const typingSpeed = 150;
   const deletingSpeed = 100;
   const pauseTime = 2000;
@@ -58,11 +58,15 @@ const Hero = () => {
           GROWING WITH REAL TIME MARKET DATA
         </p>
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 mt-6">
-          Where Knowledge Meets Opportunity
+          Where Knowledge Meets{" "}
+          <span className="text-[#00df9a] relative">
+            {text}
+            <span className="animate-blink ml-1 inline-block w-[4px] h-[0.9em] align-middle bg-[#00df9a]"></span>
+          </span>
         </h1>
         <p className="md:text-2xl text-xl font-bold text-gray-500 mt-4">
           Real Time market insights, dedicated support, comprehensive
-          educational resources to empower your trading journey
+          educational resources to empower your journey
         </p>
         <button
           onClick={scrollToFeatures}
@@ -71,6 +75,20 @@ const Hero = () => {
           See Features
         </button>
       </div>
+      <style jsx>{`
+        @keyframes blink {
+          0%,
+          100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+        }
+        .animate-blink {
+          animation: blink 1s step-end infinite;
+        }
+      `}</style>
     </div>
   );
 };

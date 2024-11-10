@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import QuoteSlider from "./components/QuoteSlider ";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <div id="features">
         <Features />
       </div>
+      <QuoteSlider />
       <div id="contact">
         <Contact />
       </div>
